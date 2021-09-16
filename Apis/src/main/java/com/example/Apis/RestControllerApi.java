@@ -20,7 +20,7 @@ public class RestControllerApi {
 
     @GetMapping("/ticks")
     @ResponseBody
-    public List<Double> Prices() throws IOException {
+    public Double Prices() throws IOException {
         LocalDateTime timeing = LocalDateTime.now();
         long sec = 60 - timeing.getSecond();
         body[] b = null;
