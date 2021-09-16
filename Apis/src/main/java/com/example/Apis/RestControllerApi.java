@@ -26,7 +26,7 @@ public class RestControllerApi {
         body[] b = null;
         List<Double> y = new ArrayList<>();
         double r = 0;
-        if (sec >= 0) {
+        if (sec >= 1) {
             ObjectMapper mapper = new ObjectMapper();
 
             b = mapper.readValue(new File("C:\\Users\\User\\Desktop\\Apis\\Apis\\src\\main\\resources\\static\\prices.json"), body[].class);
@@ -35,7 +35,7 @@ public class RestControllerApi {
                 y.add(g.getPrice());
             }
         }
-        return y;
+        return y.get(0);
 
     }
 
