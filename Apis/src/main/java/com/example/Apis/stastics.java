@@ -14,6 +14,9 @@ public class stastics {
         this.max = max;
         this.min = min;
     }
+    public stastics() {
+
+    }
 
     public int getCount() {
         return count;
