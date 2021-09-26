@@ -8,6 +8,14 @@ public class body {
     double price;
     String instrument;
 
+    public body(Timestamp timestamp, double price, String instrument) {
+        this.timestamp = timestamp;
+        this.price = price;
+        this.instrument = instrument;
+    }
+    public body() {
+      }
+
     public Timestamp getTimestamp() {
         return timestamp;
     }
